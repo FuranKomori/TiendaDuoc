@@ -1,14 +1,12 @@
-# Zapatos Bernini
-Simple Django application for managing orders in an online store.
-It just uses Django Admin modified for being usable by non-staff users.
+# Tienda Duoc
+Aplicacion en django para venta de articulos para proyecto Duoc
 
 ## Setup
 `pip install -r requirements.txt`
 
-There is included an example database so there is no need of migrating it.
+### Usuarios
 
-### Accounts
-There are 3 accounts:
+Tres cuentas:
 
 | User | Password |
 | ---- | -------- |
@@ -16,12 +14,11 @@ There are 3 accounts:
 | client | passwordpassword |
 | client2 | passwordpassword |
 
-Each client can just see their orders while admin can see all.
+Los clientes pueden ver los productos y hacer ordenes, el administrador puede agregar productos y hacer ordenes.
 
 
 ## Notes
-As it is a demo app there are many things that are not good for a production environment:
+Detalles no funcionales:
 
-- We should get some config from environment to follow factor12.
-- Email backend is set to Console.
-- Missing unit tests.
+- El email no es totalmente funcional.
+- No hay tests unitarios.
